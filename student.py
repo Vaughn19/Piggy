@@ -59,10 +59,16 @@ class Piggy(PiggyParent):
     def dance(self):
         """A higher-ordered algorithm to make your robot dance"""
         # TODO: check to see if it's safe before dancing
-        
-        elif.right(primary-50, counter=50)
-        time.sleep(2)
-        self.stop()
+        self.salsa_shuffle()
+    
+    def salsa_shuffle():
+        for x in range(4):
+            self.back()
+            self.stop()
+            self.turn_by_deg(360)
+
+    
+
 
         
             # call other dance moves
