@@ -61,7 +61,7 @@ class Piggy(PiggyParent):
         # TODO: check to see if it's safe before dancing
         self.salsa_shuffle()
     
-    def salsa_shuffle():
+    def salsa_shuffle(self):
         for x in range(4):
             self.back()
             self.stop()
