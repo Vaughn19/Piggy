@@ -64,7 +64,7 @@ class Piggy(PiggyParent):
     def salsa_shuffle(self):
         for x in range(4):
             self.back()
-            time.sleep(.5)
+            time.sleep(.2)
             self.turn_by_deg(360)
             time.sleep(.5)
 
