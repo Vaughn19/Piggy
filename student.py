@@ -71,7 +71,7 @@ class Piggy(PiggyParent):
             self.turn_by_deg(180)
             time.sleep(.5)
             self.fwd()
-            time.sleep(.5)
+            time.sleep(1)
             self.stop()
     
     def headrager_shuffle(self):
