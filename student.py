@@ -60,6 +60,8 @@ class Piggy(PiggyParent):
         """A higher-ordered algorithm to make your robot dance"""
         # TODO: check to see if it's safe before dancing
         self.salsa_shuffle()
+        #self.headrager_shuffle()
+
     
     def salsa_shuffle(self):
         for x in range(4):
@@ -70,6 +72,13 @@ class Piggy(PiggyParent):
             time.sleep(.5)
             self.fwd()
             time.sleep(.5)
+            self.stop()
+    
+    def headrager_shuffle(self):
+        for x in range(4):
+            pass 
+
+
 
 
     
