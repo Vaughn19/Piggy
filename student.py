@@ -64,6 +64,7 @@ class Piggy(PiggyParent):
 
     
     def salsa_shuffle(self):
+        """first dance of 5"""
         for x in range(4):
             self.back()
             time.sleep(.5)
@@ -75,6 +76,7 @@ class Piggy(PiggyParent):
             self.stop()
     
     def headrager_shuffle(self):
+        """robot moves his head back and fourth like he is rageing"""
         for x in range(4):
             pass 
 
