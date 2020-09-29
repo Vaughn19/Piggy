@@ -82,6 +82,7 @@ class Piggy(PiggyParent):
             self.servo(2000)
             self.turn_by_deg(180)
             self.turn_by_deg(180)
+            self.servo(1000)
 
 
 
