@@ -58,7 +58,7 @@ class Piggy(PiggyParent):
 
     def dance(self):
         """A higher-ordered algorithm to make your robot dance"""
-        if not self.save_to_dance():
+        if not self.safe_to_dance():
             return False #shut the dance down
         self.salsa_shuffle()
         #self.headrager_shuffle()
