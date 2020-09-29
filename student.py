@@ -79,10 +79,10 @@ class Piggy(PiggyParent):
     def headrager_shuffle(self):
         """robot moves his head back and fourth like he is rageing"""
         for x in range(4):
-            self.servo(2000)
-            self.turn_by_deg(180)
-            self.turn_by_deg(180)
             self.servo(1000)
+            self.turn_by_deg(180)
+            self.turn_by_deg(180)
+            self.servo(2000)
 
 
 
