@@ -90,14 +90,18 @@ class Piggy(PiggyParent):
             self.servo(2000)
 
     def poplock_shuffle(self):
-        """robot moves arounf like he is poping and locking it"""
+        """robot moves around like he is poping and locking it"""
         for x in range(4):
             self.fwd()
+            time.sleep(.2) 
             self.right()
+            time.sleep(.2)
             self.fwd()
+            time.sleep(.2)
             self.left()
+            time.sleep(.2)
             self.back()
-            self.back()
+            
     
         
         
