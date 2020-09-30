@@ -61,7 +61,7 @@ class Piggy(PiggyParent):
         if not self.safe_to_dance():
             return False #shut the dance down
         self.salsa_shuffle()
-        #self.headrager_shuffle()
+        self.headrager_shuffle()
 
     
     def salsa_shuffle(self):
