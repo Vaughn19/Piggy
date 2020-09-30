@@ -62,6 +62,7 @@ class Piggy(PiggyParent):
             return False #shut the dance down
         self.salsa_shuffle()
         self.headrager_shuffle()
+        self.poplock_shuffle()
 
     
     def salsa_shuffle(self):
@@ -87,6 +88,18 @@ class Piggy(PiggyParent):
             self.turn_by_deg(180)
             self.turn_by_deg(180)
             self.servo(2000)
+
+    def poplock_shuffle(self):
+        for x in range(4):
+            self.fwd()
+            self.right()
+            self.fwd()
+            self.left()
+            self.back()
+            self.back()
+    
+        
+        
 
 
 
