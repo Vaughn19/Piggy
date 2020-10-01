@@ -115,7 +115,7 @@ class Piggy(PiggyParent):
             time.sleep(1)
             self.servo(1000)
             self.servo(2000)
-            self.sleep(.5)
+            time.sleep(.5)
         self.stop()
             
             
