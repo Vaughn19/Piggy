@@ -113,6 +113,8 @@ class Piggy(PiggyParent):
             time.sleep(1)
             self.left(primary=70, counter=30)
             time.sleep(1)
+            self.servo(1000)
+            self.servo(2000)
             
             
         
