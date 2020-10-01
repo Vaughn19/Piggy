@@ -110,12 +110,11 @@ class Piggy(PiggyParent):
         """new dance makes the robot swerve around"""
         for x in range(4):
             self.right(primary=70, counter=30)
-            time.sleep(.2)
+            time.sleep(1)
             self.left(primary=70, counter=30)
-            time.sleep(.2)
-            self.turn_by_deg(180)
-            self.turn_by_deg(180)
-            time.sleep(.2)
+            time.sleep(1)
+            
+            
         
         
 
