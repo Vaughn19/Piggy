@@ -109,8 +109,8 @@ class Piggy(PiggyParent):
     def swerving_shuffle(self):
         """new dance makes the robot swerve around"""
         for x in range(4):
-            self.right()
-            self.left()
+            self.right(primary=70, counter=30)
+            self.left(primary=70, counter=30)
             self.turn_by_deg(180)
             self.turn_by_deg(180)
         
