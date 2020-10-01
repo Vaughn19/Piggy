@@ -63,6 +63,7 @@ class Piggy(PiggyParent):
         self.salsa_shuffle()
         self.headrager_shuffle()
         self.poplock_shuffle()
+        self.swerving_shuffle()
 
     
     def salsa_shuffle(self):
@@ -105,6 +106,12 @@ class Piggy(PiggyParent):
             self.stop()
             time.sleep(.2)
     
+    def swerving_shuffle(self):
+        for x in range(4):
+            self.right()
+            self.left()
+            self.turn_by_deg(180)
+            self.turn_by_deg(180)
         
         
 
