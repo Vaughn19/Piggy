@@ -64,6 +64,7 @@ class Piggy(PiggyParent):
         self.headrager_shuffle()
         self.poplock_shuffle()
         self.swerving_shuffle()
+        self.coolwalk_shuffle()
 
     
     def salsa_shuffle(self):
@@ -119,7 +120,9 @@ class Piggy(PiggyParent):
         self.stop()
             
             
-        
+    def coolwalk_shuffle(self):
+        for x in range(4): 
+               
         
 
 
