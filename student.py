@@ -122,7 +122,14 @@ class Piggy(PiggyParent):
             
     def coolwalk_shuffle(self):
         for x in range(4): 
-               
+            self.fwd()   
+            self.right(primary=70, counter=30)
+            time.sleep(.5)
+            self.fwd()
+            self.left(primary=70, counter=30)
+            time.sleep(.5)
+            self.back()
+            self.stop()
         
 
 
