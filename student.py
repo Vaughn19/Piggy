@@ -69,7 +69,7 @@ class Piggy(PiggyParent):
     
     def salsa_shuffle(self):
         """first dance of 5"""
-        for x in range(4):
+        for x in range(8):
             self.back()
             time.sleep(.5)
             self.turn_by_deg(180)
@@ -81,7 +81,7 @@ class Piggy(PiggyParent):
     
     def headrager_shuffle(self):
         """robot moves his head back and fourth like he is rageing"""
-        for x in range(4):
+        for x in range(8):
             self.servo(1000)
             self.turn_by_deg(180)
             self.servo(2000)
@@ -93,7 +93,7 @@ class Piggy(PiggyParent):
 
     def poplock_shuffle(self):
         """robot moves around like he is poping and locking it"""
-        for x in range(4):
+        for x in range(8):
             self.fwd()
             time.sleep(.2) 
             self.right()
@@ -109,7 +109,7 @@ class Piggy(PiggyParent):
     
     def swerving_shuffle(self):
         """new dance makes the robot swerve around"""
-        for x in range(4):
+        for x in range(8):
             self.right(primary=70, counter=30)
             time.sleep(1)
             self.left(primary=70, counter=30)
@@ -122,7 +122,7 @@ class Piggy(PiggyParent):
             
     def coolwalk_shuffle(self):
         """this dance makes the robot walk like his cool"""
-        for x in range(4): 
+        for x in range(8): 
             self.fwd()   
             self.right(primary=70, counter=30)
             time.sleep(.5)
