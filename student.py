@@ -121,6 +121,7 @@ class Piggy(PiggyParent):
             
             
     def coolwalk_shuffle(self):
+        """this dance makes the robot walk like his cool"""
         for x in range(4): 
             self.fwd()   
             self.right(primary=70, counter=30)
