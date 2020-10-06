@@ -188,7 +188,7 @@ class Piggy(PiggyParent):
         
         # TODO: build self.quick_check() that does a fast, 3-part check instead of read_distance
         while True:
-            self.read_distance() < self.SAFE_DISTANCE:
+            if self.read_distance() < self.SAFE_DISTANCE:
                 self.stop()  
                 print("oh no!!!! somthing is in my way!!")
                 self.turn_by_deg(90)
