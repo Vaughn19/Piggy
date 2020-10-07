@@ -18,7 +18,7 @@ class Piggy(PiggyParent):
         MAGIC NUMBERS <-- where we hard-code our settings
         '''
         self.LEFT_DEFAULT = 80
-        self.RIGHT_DEFAULT = 85
+        self.RIGHT_DEFAULT = 83
         self.SAFE_DISTANCE = 300
         self.CLOSE_DISTANCE = 60
         self.MIDPOINT = 1400  # what servo command (1000-2000) is straight forward for your bot?
@@ -179,6 +179,18 @@ class Piggy(PiggyParent):
     def obstacle_count(self):
         """Does a 360 scan and returns the number of obstacles it sees"""
         pass
+    def quick_check(self):
+        """ Moves servo to three angles and performs a distance check """
+        #loop three times and move servo 
+        for angle in range(self.MIDPOINT - 100, self.MIDPOINT+101, 100):
+            self.servo(ang)
+            time.sleep(.05)
+            if self.read_distance() < self.SAFE_DISTANCE:
+                return False
+        #if the three part check dident freak out
+        return True
+
+
 
     def nav(self):
         """ Auto-pilot program """
@@ -188,14 +200,13 @@ class Piggy(PiggyParent):
         
         # TODO: build self.quick_check() that does a fast, 3-part check instead of read_distance
         while True:
-            if self.read_distance() < self.CLOSE_DISTANCE:
+            if not self.quick_check:
                 self.stop()  
                 print("oh no!!!! somthing is in my way!!")
                 self.turn_by_deg(90)
                 time.sleep(.1)
             else:
                 self.fwd()
-            time.sleep(.01)
         self.stop()
         # TODO: scan so we can decide left or right
         # TODO: average the right side of the scan dict
