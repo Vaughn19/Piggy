@@ -183,7 +183,7 @@ class Piggy(PiggyParent):
         """Does a 360 scan and returns the number of obstacles it sees"""
         for x in range(4):
             # print the scan of the area in front of the robot 
-            self.scan()
+            self.scan(4)
             # Figure out how many obstacles there were
             see_an_object = False
             count = 0 
