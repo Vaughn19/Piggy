@@ -194,6 +194,7 @@ class Piggy(PiggyParent):
                 see_an_object = True 
                 count += 1
                 print("~~~ I SEE SOMTHING!!! ~~~")
+                self.turn_by_deg(90)
             elif dist > self.SAFE_DISTANCE and see_an_object:
                 see_an_object = False 
                 print("I guess the object ended")
@@ -201,6 +202,8 @@ class Piggy(PiggyParent):
                 
             print("ANGLE:  %d  |  DIST: %d" % (angle, dist))
         print("\nI saw %d objects" % count)
+
+        
 
           
 
