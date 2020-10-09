@@ -194,6 +194,7 @@ class Piggy(PiggyParent):
                 see_an_object = True 
                 count += 1
                 print("~~~ I SEE SOMTHING!!! ~~~")
+            if x in range(4):
                 self.turn_by_deg(90)
             elif dist > self.SAFE_DISTANCE and see_an_object:
                 see_an_object = False 
