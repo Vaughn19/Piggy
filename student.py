@@ -191,11 +191,11 @@ class Piggy(PiggyParent):
         for angle in self.scan_data:
             dist = self.scan_data[angle]
             if dist < self.SAFE_DISTANCE and not see_an_object:
-                see_an_object = True 
-                count += 1
-                print("~~~ I SEE SOMTHING!!! ~~~")
-            if x in range(4):
-                self.turn_by_deg(90)
+                for x in in range(4):
+                    see_an_object = True 
+                    count += 1
+                    print("~~~ I SEE SOMTHING!!! ~~~")
+                    self.turn_by_deg(90)
             elif dist > self.SAFE_DISTANCE and see_an_object:
                 see_an_object = False 
                 print("I guess the object ended")
