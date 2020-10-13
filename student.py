@@ -197,13 +197,13 @@ class Piggy(PiggyParent):
                 left_sum += self.scan_data[angle]
                 left_avg += 1
 
-            # Calculate averages 
-            left_avg = left_sum / left_avg
-            right_avg = right_sum / right_avg
-            if left_avg > right_avg:
-                return 'l'
-            else:
-                return 'r'
+        # Calculate averages 
+        left_avg = left_sum / left_avg
+        right_avg = right_sum / right_avg
+        if left_avg > right_avg:
+            return 'l'
+        else:
+            return 'r'
 
 
 
