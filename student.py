@@ -283,13 +283,13 @@ class Piggy(PiggyParent):
 
         while True:
             if not self.quick_check():
-                turn_count += 1
-                self.stop()  
-                if turn_count > 3 and turn_count % 3 == 0:
-                    self.back()
+                 self.back()
                     time.sleep(0.3)
                     self.stop
-                    self.turn_to_deg(exit_ang)
+                    turn_count += 1
+                    self.stop()  
+                if turn_count > 3 and turn_count % 3 == 0:
+                   self.turn_to_deg(exit_ang)
                 if 'l' in self.right_or_left():
                     self.turn_by_deg(-45)
                 else:
