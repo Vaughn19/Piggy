@@ -284,7 +284,7 @@ class Piggy(PiggyParent):
         while True:
             if not self.quick_check():
                  self.back()
-                    time.sleep(0.3)
+                    time.sleep(0.03)
                     self.stop
                     turn_count += 1
                     self.stop()  
