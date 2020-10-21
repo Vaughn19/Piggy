@@ -262,7 +262,7 @@ class Piggy(PiggyParent):
         # so long as we see somthing close, keep turning left
         while self.read_distance() < self.SAFE_DISTANCE:
             self.left(primary=50, counter=-50)
-            time.sleep(.05)
+            time.sleep(.03)
         # stop motion before we end the motion
         self.stop
 
